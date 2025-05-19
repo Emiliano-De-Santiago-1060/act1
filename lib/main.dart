@@ -44,25 +44,25 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
         children: <Widget>[
           makePage(
             page: 1,
-            image: 'assets/fresas.jpg',
+            image: 'https://raw.githubusercontent.com/Emiliano-De-Santiago-1060/Snacks_imagenes_app_flutter/refs/heads/main/Fresas.webp',
             title: 'Yosemite National Park',
             description: 'Yosemite National Park is in California’s Sierra Nevada mountains.'
           ),
           makePage(
             page: 2,
-            image: 'assets/fresas2.jpg',
+            image: 'https://raw.githubusercontent.com/Emiliano-De-Santiago-1060/Snacks_imagenes_app_flutter/refs/heads/main/clamahuates.jpeg',
             title: 'Golden Gate Bridge',
             description: 'The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide strait.'
           ),
           makePage(
             page: 3,
-            image: 'assets/fresas3.jpg',
+            image: 'https://raw.githubusercontent.com/Emiliano-De-Santiago-1060/Snacks_imagenes_app_flutter/refs/heads/main/papaslocas.jpg',
             title: 'Sedona',
             description: "Sedona is regularly described as one of America's most beautiful places."
           ),
           makePage(
             page: 4,
-            image: 'assets/fresas4.jpg',
+            image: 'https://raw.githubusercontent.com/Emiliano-De-Santiago-1060/Snacks_imagenes_app_flutter/refs/heads/main/fresas.jpg',
             title: 'Savannah',
             description: "Savannah, with its Spanish moss, Southern accents and creepy graveyards, is a lot like Charleston, South Carolina."
           ),
@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(image),
+          image: NetworkImage(image),
           fit: BoxFit.cover
         )
       ),
